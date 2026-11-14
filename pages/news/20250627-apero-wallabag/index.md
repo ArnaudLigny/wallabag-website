@@ -4,6 +4,8 @@ published: true
 date: 2025-07-01 14:00:00 +02:00
 description: Rendez-vous à Paris pour rencontrer l'équipe wallabag autour d'un verre.
 lang: fr
+opengraph:
+  locale: fr_FR
 ---
 
 Nous vous donnons rendez-vous le jeudi 17 juillet à partir de 18h30 au bar Chez Jean-Claude, 9 rue Vandamme (site internet : [https://www.chezjeanclaudeleretour.fr/](https://www.chezjeanclaudeleretour.fr/)).

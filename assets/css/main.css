@@ -6474,7 +6474,7 @@ button.close {
 .fancybox-close,
 .fancybox-prev span,
 .fancybox-next span {
-	background-image: url(/img/fancybox_sprite.png)
+	background-image: url(../img/fancybox_sprite.png)
 }
 
 #fancybox-loading {
@@ -6492,7 +6492,7 @@ button.close {
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url(/img/fancybox_loading.gif) center center no-repeat
+	background: url(../img/fancybox_loading.gif) center center no-repeat
 }
 
 .fancybox-close {
@@ -6512,7 +6512,7 @@ button.close {
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	background: transparent url(/css/blank.gif);
+	background: transparent url(../css/blank.gif);
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	z-index: 8040
 }
@@ -6580,7 +6580,7 @@ button.close {
 	overflow: hidden;
 	display: none;
 	z-index: 8000;
-	background: url(/img/fancybox_overlay.png)
+	background: url(../img/fancybox_overlay.png)
 }
 
 .fancybox-overlay-fixed {
@@ -6659,12 +6659,12 @@ only screen and (min-device-pixel-ratio:1.5) {
 	.fancybox-close,
 	.fancybox-prev span,
 	.fancybox-next span {
-		background-image: url(/img/fancybox_sprite@2x.png);
+		background-image: url(../img/fancybox_sprite@2x.png);
 		background-size: 44px 152px
 	}
 
 	#fancybox-loading div {
-		background-image: url(/img/fancybox_loading@2x.gif);
+		background-image: url(../img/fancybox_loading@2x.gif);
 		background-size: 24px 24px
 	}
 }
@@ -6851,37 +6851,37 @@ only screen and (min-device-pixel-ratio:1.5) {
 
 @font-face {
 	font-family: Nunito;
-	src: url(/fonts/Nunito-Regular.ttf)
+	src: url(../fonts/Nunito-Regular.ttf)
 }
 
 @font-face {
 	font-family: Nunito;
-	src: url(/fonts/Nunito-Bold.ttf);
+	src: url(../fonts/Nunito-Bold.ttf);
 	font-weight: 700
 }
 
 @font-face {
 	font-family: Nunito;
-	src: url(/fonts/Nunito-Italic.ttf);
+	src: url(../fonts/Nunito-Italic.ttf);
 	font-style: italic
 }
 
 @font-face {
 	font-family: Nunito;
-	src: url(/fonts/Nunito-BoldItalic.ttf);
+	src: url(../fonts/Nunito-BoldItalic.ttf);
 	font-weight: 700;
 	font-style: italic
 }
 
 @font-face {
 	font-family: Nunito;
-	src: url(/fonts/Nunito-Light.ttf);
+	src: url(../fonts/Nunito-Light.ttf);
 	font-weight: 300
 }
 
 @font-face {
 	font-family: Nunito;
-	src: url(/fonts/Nunito-LightItalic.ttf);
+	src: url(../fonts/Nunito-LightItalic.ttf);
 	font-style: italic;
 	font-weight: 300
 }
@@ -7242,7 +7242,7 @@ a:focus {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(/img/grid.png)
+	background-image: url(../img/grid.png)
 }
 
 .use-btn {
@@ -7385,7 +7385,7 @@ a:focus {
 	position: relative;
 	padding: 10px 0 60px 0;
 	max-height: 800px;
-	background: rgb(40, 70, 102) url(/img/bg_header.jpg) no-repeat center center;
+	background: rgb(40, 70, 102) url(../img/bg_header.jpg) no-repeat center center;
 	background-size: cover;
 	color: #fff
 }
@@ -7476,7 +7476,7 @@ header i {
 	padding: 18px 0 90px;
 	background:
 		linear-gradient(110deg, rgba(25, 48, 73, .96) 0%, rgba(36, 75, 96, .88) 48%, rgba(48, 105, 104, .72) 100%),
-		url(/img/bg_header.jpg) no-repeat center center;
+		url(../img/bg_header.jpg) no-repeat center center;
 	background-size: cover
 }
 
@@ -7634,7 +7634,7 @@ header {
 .features-bg {
 	position: relative;
 	min-height: 400px;
-	background: url(/img/features-intro-01.jpg) no-repeat center center;
+	background: url(../img/features-intro-01.jpg) no-repeat center center;
 	background-size: cover
 }
 

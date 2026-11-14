@@ -1,0 +1,6 @@
+{#- Summary of a post: its description, or the beginning of its content (`length` characters) -#}
+{%- if post.description|default -%}
+  {{- post.description -}}
+{%- else -%}
+  {{- post.content|striptags|trim|u.truncate(length, '...') -}}
+{%- endif -%}

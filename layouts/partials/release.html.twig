@@ -1,0 +1,7 @@
+{#- Prints the latest wallabag release name, fetched from the GitHub API (fallback: `release.version`) -#}
+{%- set version = site.release.version -%}
+{%- set latest = asset('https://api.github.com/repos/wallabag/wallabag/releases/latest', {ignore_missing: true, minify: false, fingerprint: false}) -%}
+{%- if not latest.missing -%}
+  {%- set version = (latest.content|json_decode).name|default(version) -%}
+{%- endif -%}
+{{- version -}}

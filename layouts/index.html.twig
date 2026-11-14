@@ -1,14 +1,15 @@
-<html lang="en">
-  <head>
-    {% include "_head.html" %}
-   </head>
-  <body>
-    <a class="skip-link" href="#content">Skip to content</a>
+{#- Homepage -#}
+{% extends 'base.html.twig' %}
 
-    {% include "_navigation.html", from_news: false, title: title %}
+{% set hero = true %}
+{% set latest = site.pages.showable|filter_by('section', 'news')|sort_by_date|first %}
 
+{% block metatags ~%}
+    {{- include('partials/metatags.html.twig', {title: page.title}) ~}}
+{%- endblock %}
+
+{% block body %}
     <div id="content">
-      {% assign latestPost = collections.post | reverse | first %}
       <section class="latest-blog" id="latest-blog">
         <div class="container">
           <div class="row">
@@ -16,17 +17,13 @@
               <p class="latest-blog-label">Latest from the blog</p>
               <article class="latest-blog-post">
                 <div class="latest-blog-content">
-                  <h1><a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a></h1>
-                  <time datetime="{{ latestPost.date }}">{{ latestPost.date | date }}</time>
-                  {% if latestPost.data.description %}
-                    <p>{{ latestPost.data.description }}</p>
-                  {% else %}
-                    <p>{{ latestPost.templateContent | strip_html | strip | truncate: 180 }}</p>
-                  {% endif %}
+                  <h1><a href="{{ url(latest) }}">{{ latest.title }}</a></h1>
+                  <time datetime="{{ latest.date|date('c') }}">{{ latest.date|date }}</time>
+                  <p>{{ include('partials/summary.html.twig', {post: latest, length: 180}, with_context=false) }}</p>
                 </div>
                 <div class="latest-blog-actions">
-                  <a href="{{ latestPost.url }}" class="rss-btn">Read the post</a>
-                  <a href="/news/" class="rss-btn">All blog posts</a>
+                  <a href="{{ url(latest) }}" class="rss-btn">Read the post</a>
+                  <a href="{{ url('news') }}" class="rss-btn">All blog posts</a>
                 </div>
               </article>
             </div>
@@ -43,22 +40,22 @@
                 <h1>Keep your reading archive under your control.</h1>
               </div>
               <div class="guide-grid">
-                <a href="/migrate-from-pocket/" class="guide-card">
+                <a href="{{ url('migrate-from-pocket') }}" class="guide-card">
                   <i class="fa fa-cloud-download"></i>
                   <h2>Migrate from Pocket</h2>
                   <p>Import your Pocket CSV export into wallabag.</p>
                 </a>
-                <a href="/migrate-from-omnivore/" class="guide-card">
+                <a href="{{ url('migrate-from-omnivore') }}" class="guide-card">
                   <i class="fa fa-cloud-download"></i>
                   <h2>Migrate from Omnivore</h2>
                   <p>Move your Omnivore export to an open source read-it-later app.</p>
                 </a>
-                <a href="/self-hosting/" class="guide-card">
+                <a href="{{ url('self-hosting') }}" class="guide-card">
                   <i class="fa fa-server"></i>
                   <h2>Self-host wallabag</h2>
                   <p>Run your own instance and keep control of your saved articles.</p>
                 </a>
-                <a href="/apps-and-readers/" class="guide-card">
+                <a href="{{ url('apps-and-readers') }}" class="guide-card">
                   <i class="fa fa-mobile"></i>
                   <h2>Apps and readers</h2>
                   <p>Use wallabag with extensions, mobile apps, RSS readers and e-readers.</p>
@@ -92,7 +89,7 @@
                   <i class="fa fa-puzzle-piece"></i>
                   <h2>Open ecosystem</h2>
                   <p>Use official apps, browser extensions, RSS feeds, e-readers and the wallabag API to fit your reading workflow.</p>
-                  <a href="/apps-and-readers/">Explore apps and readers</a>
+                  <a href="{{ url('apps-and-readers') }}">Explore apps and readers</a>
                 </article>
               </div>
             </div>
@@ -113,7 +110,7 @@
                   <i class="fa fa-server"></i>
                   <h2>Self-host wallabag</h2>
                   <p>Install wallabag on your own server and keep full control over updates, backups, data and access.</p>
-                  <a href="/self-hosting/" class="rss-btn">Read the self-hosting guide</a>
+                  <a href="{{ url('self-hosting') }}" class="rss-btn">Read the self-hosting guide</a>
                 </article>
                 <article class="choice-card choice-card-highlight">
                   <i class="fa fa-cloud"></i>
@@ -157,8 +154,6 @@
           </div>
         </div>
       </section>
-      {% include "_download.html" %}
+      {{ include('partials/download.html.twig') }}
     </div>
-    {% include "_footer.html" %}
-  </body>
-</html>
+{% endblock %}

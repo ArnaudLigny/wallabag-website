@@ -1,0 +1,9 @@
+{#- RSS readers compatible with wallabag (data/readers.json) -#}
+<div class="contentCards readerCards">
+{% for reader in site.data.readers %}
+  <div>
+    <h3>{{ reader.name }}</h3>
+    <p><a href="{{ reader.url }}">Visit website</a></p>
+  </div>
+{% endfor %}
+</div>

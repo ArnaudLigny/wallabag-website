@@ -1,5 +1,5 @@
 ---
-layout: "content-page.html"
+layout: content-page
 title: "Migrate from Omnivore to wallabag"
 description: "Import your Omnivore export into wallabag, an open source read-it-later app for saving, organizing and reading articles."
 ---
@@ -11,7 +11,7 @@ Omnivore announced in 2024 that its service would shut down after joining Eleven
 ## Omnivore migration checklist
 
 1. Locate the Omnivore export you already downloaded and keep the original archive as a backup.
-2. Create or choose a wallabag instance: [self-host wallabag](/self-hosting/) or use [wallabag.it](https://www.wallabag.it/en).
+2. Create or choose a wallabag instance: [self-host wallabag](page:self-hosting) or use [wallabag.it](https://www.wallabag.it/en).
 3. Import your Omnivore export into wallabag.
 4. Review your imported entries and organize them with tags.
 5. Set up the browser extension, mobile app or RSS workflow you want to use next.
@@ -24,8 +24,8 @@ If you only need a hosted read-it-later service, [wallabag.it](https://www.walla
 
 ## Related reading
 
-- [Migrate from Omnivore to wallabag](/news/20241031-migrate-from-omnivore/)
-- [wallabag 2.6.10 release notes with Omnivore import](/news/20241103-new-release-wallabag-2610/)
-- [Use wallabag with apps, extensions, RSS readers and e-readers](/apps-and-readers/)
+- [Migrate from Omnivore to wallabag](page:news/20241031-migrate-from-omnivore)
+- [wallabag 2.6.10 release notes with Omnivore import](page:news/20241103-new-release-wallabag-2610)
+- [Use wallabag with apps, extensions, RSS readers and e-readers](page:apps-and-readers)
 
 <p><a class="contentAction" href="#download">Download wallabag</a> <a class="contentAction contentAction-secondary" href="https://www.wallabag.it/en">Use wallabag.it</a></p>

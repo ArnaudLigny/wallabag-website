@@ -1,0 +1,10 @@
+{%- set version = include('partials/release.html.twig') -%}
+# Redirects from what the browser requests to what we serve
+/en/news.rss                /feed.xml
+/feeds/all.atom.xml         /feed.xml
+
+# package download redirect from wllbg.org
+/latest-v2                  https://github.com/wallabag/wallabag/releases/download/{{ version }}/wallabag-{{ version }}.tar.gz
+/latest-v2-package          https://github.com/wallabag/wallabag/releases/download/{{ version }}/wallabag-{{ version }}.tar.gz
+
+/news/wallabagger-howto/    https://wallabagger.wallabag.org/

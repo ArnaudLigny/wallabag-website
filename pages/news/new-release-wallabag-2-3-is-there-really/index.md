@@ -11,7 +11,7 @@ Be prepared.
 
 **It’s now time to present you this new great version**.
 
-![](giphy.gif)
+![](/news/new-release-wallabag-2-3-is-there-really/giphy.gif)
 
 ## What’s new?
 
@@ -21,7 +21,7 @@ In wallabag 2.2, we added the availability to save articles on websites who an a
 
 **But our so great @j0k3r created an interface to easily handle your credentials**. 
 
-![](credentials.png)
+![](/news/new-release-wallabag-2-3-is-there-really/credentials.png)
 
 In Site credentials, you need to create a new credential by typing the domain name (without the https://www. part – we'll improve it soon), your username and your login. All is encrypted in your database. If you want more details, [you can read the specifications here](https://github.com/wallabag/wallabag/pull/2683). 
 

@@ -7,7 +7,7 @@ It's been a week since [we've released v1.9.1](https://www.wallabag.org/blog/201
 
 ## Chrome Extension
 The chrome extension has been updated with the right click-menu function named *Add page to wallabag*, as you can see on the picture below.
-![Chrome Extension](chrome_ext.png)
+![Chrome Extension](/news/a-word-about-our-browser-extensions/chrome_ext.png)
 
 This update has been pushed three days ago on the Chrome Web Store, so you should have got it by now.
 
@@ -24,9 +24,9 @@ Apart from this, we've launched with wallabag 1.9.1 the wallabag Firefox Service
 Now for the big stuff. It comes. There have been quite some work, but the most important thing right now is the arrival of a new theme in material style logically called *material*. This theme should be the main one on v2. We all can thank Alexandr Danilov for his work.
 
 Here's a preview below :
-![list of articles](material1.png)
+![list of articles](/news/a-word-about-our-browser-extensions/material1.png)
 
-![article view](material2.png)
+![article view](/news/a-word-about-our-browser-extensions/material2.png)
 
 The best news is that you can test it yourself at [v2.wallabag.org](v2.wallabag.org). Just keep in mind that it's in alpha state, and many features are missing. But it's just a matter of time.
 

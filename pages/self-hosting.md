@@ -1,5 +1,5 @@
 ---
-layout: "content-page.html"
+layout: content-page
 title: "Self-host wallabag"
 description: "Self-host wallabag to save articles, keep control of your reading data and run an open source read-it-later app on your own server."
 ---
@@ -38,8 +38,8 @@ If you want wallabag without maintaining a server, [wallabag.it](https://www.wal
 
 ## Useful next steps
 
-- [Migrate from Pocket to wallabag](/migrate-from-pocket/)
-- [Migrate from Omnivore to wallabag](/migrate-from-omnivore/)
-- [Use wallabag with apps, extensions, RSS readers and e-readers](/apps-and-readers/)
+- [Migrate from Pocket to wallabag](page:migrate-from-pocket)
+- [Migrate from Omnivore to wallabag](page:migrate-from-omnivore)
+- [Use wallabag with apps, extensions, RSS readers and e-readers](page:apps-and-readers)
 
 <p><a class="contentAction" href="#download">Download wallabag</a> <a class="contentAction contentAction-secondary" href="https://www.wallabag.it/en">Use wallabag.it</a></p>

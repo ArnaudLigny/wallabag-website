@@ -13,7 +13,7 @@ Now, talking about some features, I know we said we wouldn't add any more to 1.x
 
 I'm happy to announce next versions will feature *previous and next navigation buttons* just next to the already existing "return to top" one with baggy theme. Default theme and inherited themes will have those buttons in the existing toolbar.
 
-![buttons](wallabag_navigate_arrows.png)
+![buttons](/news/april-update/wallabag_navigate_arrows.png)
 
 You will also be able to navigate through articles by using your *right and left keyboard* arrows on desktop, or *swipe right or left* on touchscreen devices. Maybe we could enable vim-style navigation (with `hjkl`) in the future (there's [a poll](https://framadate.org/u6k7qlcmwvdr8df6), by the way).
 

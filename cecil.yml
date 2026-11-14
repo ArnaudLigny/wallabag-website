@@ -1,0 +1,57 @@
+title: wallabag
+baseurl: https://wallabag.org/
+description: "With wallabag, archive the web freely. wallabag is a self hostable application for saving web pages."
+image: img/wallabag_preview.png
+language: en
+
+# Latest stable release (used as a fallback when the GitHub API is unreachable at build time)
+release:
+  version: "2.6.17"
+  blogpost: news/20261113-new-release-wallabag-2617
+  checksum: ea33d4912f9dedec94adec23d11d4d38
+
+links:
+  email: mailto:hello@wallabag.org
+  github: https://github.com/wallabag
+  repo: https://github.com/wallabag/wallabag
+  mastodon: https://fosstodon.org/@wallabag
+  liberapay: https://liberapay.com/wallabag/donate
+
+date:
+  format: j F Y
+  timezone: Europe/Paris
+
+metatags:
+  title:
+    only: true     # page title only, without the site title
+  articles: news   # "news" posts are rendered as Open Graph articles
+
+pages:
+  pagination: false
+  body:
+    anchors: false
+    highlight: false
+    links:
+      external:
+        noopener: false
+        noreferrer: false
+  default:
+    xsl/atom:
+      published: false
+    # Netlify redirects file
+    redirects:
+      path: _redirects
+      layout: redirects
+      output: netlify
+      published: true
+      excluded: true
+
+output:
+  formats:
+    - name: rss
+      filename: feed # /feed.xml
+    - name: netlify
+      mediatype: text/plain
+      extension: ''
+  pagetypeformats:
+    homepage: [html, rss]

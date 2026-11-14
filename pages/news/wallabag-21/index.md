@@ -9,7 +9,7 @@ Since this release, we've worked on fixes (we [released 8 patches](https://www.w
 
 Now, it's time to take a look at these new features!
 
-![It's a wallaby!](gif.gif)
+![It's a wallaby!](/news/wallabag-21/gif.gif)
 
 <hr />
 
@@ -17,7 +17,7 @@ Now, it's time to take a look at these new features!
 
 The recent news ([Instapaper is joining Pinterest](http://blog.instapaper.com/post/149374303661), [The Readability bookmarking service will shut down on September 30, 2016](https://medium.com/@readability/the-readability-bookmarking-service-will-shut-down-on-september-30-2016-1641cc18e02b#.jzcn686qt)) in the read-it-later ecosystem encouraged us to change our roadmap. We planned to work on the Tags feature for this 2.1 version but we worked hard on importing your data from 3rd-party services (but we've also made a few changes on the tags feature !).
 
-![Readability import](readability_import.png)
+![Readability import](/news/wallabag-21/readability_import.png)
 
 <div>
   <div class="col-lg-6">
@@ -27,7 +27,7 @@ The recent news ([Instapaper is joining Pinterest](http://blog.instapaper.com/po
   </div>
 </div>
 
-![Instapaper import](instapaper_import.png)
+![Instapaper import](/news/wallabag-21/instapaper_import.png)
 
 <div class="row">
   <div class="col-lg-6">
@@ -37,7 +37,7 @@ The recent news ([Instapaper is joining Pinterest](http://blog.instapaper.com/po
   </div>
 </div>
 
-![Firefox and Chrome import](firefox_chrome.png)
+![Firefox and Chrome import](/news/wallabag-21/firefox_chrome.png)
 
 <div class="row">
   <div class="col-lg-6">
@@ -65,7 +65,7 @@ Beware : these services will certainly not be available if you use shared hostin
 
 <hr />
 
-![You can finally manage your users](manage_users.png)
+![You can finally manage your users](/news/wallabag-21/manage_users.png)
 
 <div class="row">
   <div class="col-lg-6">
@@ -77,7 +77,7 @@ Beware : these services will certainly not be available if you use shared hostin
 
 <hr />
 
-![Share your articles with your friends](share_public.png)
+![Share your articles with your friends](/news/wallabag-21/share_public.png)
 
 <div class="row">
   <div class="col-lg-6">
@@ -91,9 +91,9 @@ Beware : these services will certainly not be available if you use shared hostin
 
 ## One more thing...
 
-![Android sync](android_sync.png)
+![Android sync](/news/wallabag-21/android_sync.png)
 
-![Android wizard](android_wizard.png)
+![Android wizard](/news/wallabag-21/android_wizard.png)
 
 Dmitriy Bogdanov ([@di72nn](https://github.com/di72nn)) worked really hard on the Android app and came out with the following new features :
 

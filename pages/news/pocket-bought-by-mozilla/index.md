@@ -7,4 +7,4 @@ taxonomy:
 date: 2017-03-01
 ---
 
-![<3](giphy.gif)
+![<3](/news/pocket-bought-by-mozilla/giphy.gif)

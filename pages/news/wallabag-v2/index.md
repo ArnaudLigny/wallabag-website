@@ -7,7 +7,7 @@ date: 2016-04-03 21:00:00 +02:00
 
 [Three years ago, I started a little script, to replace the closed service I used to use](http://loeuillet.org/poche-pour-remplacer-instapaper-pocket-et-readability) (french article). It was a personal script, that I hosted on GitHub. I never realized that people could be interested with it.
 
-![poche 0.1](poche01.jpg)
+![poche 0.1](/news/wallabag-v2/poche01.jpg)
 
 [You are more than 8.900 users on Framabag](https://framabag.org/analytics/), [you are more than 1.800 fans on GitHub](https://github.com/wallabag/wallabag/stargazers), wallabag 1.x was downloaded more than 33.400 times, [we released so many versions](https://www.wallabag.org/pages/releases.html) with so many features, and our history can still go on.
 
@@ -98,4 +98,4 @@ We already planned to release wallabag 2.1.0 at July, 3rd.
 
 Now, I think it's time to open a good beer! Happy birthday wallabag! 
 
-![Champagne!](gifwllbg20.gif)
+![Champagne!](/news/wallabag-v2/gifwllbg20.gif)

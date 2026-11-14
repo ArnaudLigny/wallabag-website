@@ -1,5 +1,5 @@
 ---
-layout: "content-page.html"
+layout: content-page
 title: "Migrate from Pocket to wallabag"
 description: "Import your Pocket export into wallabag, the open source read-it-later app you can self-host or use with wallabag.it."
 ---
@@ -13,7 +13,7 @@ wallabag can be used in two ways: you can self-host your own instance, or use [w
 ## Pocket migration checklist
 
 1. Locate the Pocket CSV export you already downloaded and keep the original file somewhere safe.
-2. Create or choose a wallabag instance: [self-host wallabag](/self-hosting/), use [wallabag.it](https://www.wallabag.it/en), or look for a community host such as [CHATONS](https://www.chatons.org/taxonomy/term/317).
+2. Create or choose a wallabag instance: [self-host wallabag](page:self-hosting), use [wallabag.it](https://www.wallabag.it/en), or look for a community host such as [CHATONS](https://www.chatons.org/taxonomy/term/317).
 3. Import your Pocket CSV export into wallabag.
 4. Review the imported entries and keep the original export as a backup.
 5. Install the browser extension or mobile app you want to use for saving new articles.
@@ -43,8 +43,8 @@ Some pages may be unavailable, blocked, deleted or difficult to extract dependin
 
 ## Related reading
 
-- [Pocket shuts down but open web remains](/news/20250524-pocket-shutdown/)
-- [wallabag 2.6.13 release notes with Pocket CSV import](/news/20250604-new-release-wallabag-2613/)
-- [Use wallabag with apps, extensions, RSS readers and e-readers](/apps-and-readers/)
+- [Pocket shuts down but open web remains](page:news/20250524-pocket-shutdown)
+- [wallabag 2.6.13 release notes with Pocket CSV import](page:news/20250604-new-release-wallabag-2613)
+- [Use wallabag with apps, extensions, RSS readers and e-readers](page:apps-and-readers)
 
 <p><a class="contentAction" href="#download">Download wallabag</a> <a class="contentAction contentAction-secondary" href="https://www.wallabag.it/en">Use wallabag.it</a></p>

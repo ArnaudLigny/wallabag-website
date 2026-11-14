@@ -1,0 +1,43 @@
+# Preview of the website on GitHub Pages, for forks only
+# (the official website is deployed by Netlify).
+# Requires GitHub Pages to be enabled on the fork, with "GitHub Actions" as source.
+name: GitHub Pages preview
+
+on:
+  push:
+    branches:
+      - main
+      - feat/migrate-to-cecil
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.repository != 'wallabag/website'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v7
+
+      - name: Run build 🏗️
+        uses: Cecilapp/Cecil-Action@v4
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v5

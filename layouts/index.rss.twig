@@ -1,0 +1,23 @@
+{#- RSS feed of the news posts (/feed.xml) -#}
+{#- origin of the site, to make the URLs of the content absolute -#}
+{%- set origin = url(page, {canonical: true, format: 'html'})|split('/')|slice(0, 3)|join('/') -%}
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title|e }}</title>
+    <link>{{ url(page, {canonical: true, format: 'html'}) }}</link>
+    <atom:link href="{{ url(page, {canonical: true, format: 'rss'}) }}" rel="self" type="application/rss+xml" />
+    <description>News about wallabag development</description>
+    <language>{{ site.language }}</language>
+    {%- for post in site.pages.showable|filter_by('section', 'news')|sort_by_date ~%}
+    <item>
+      <title>{{ post.title|e }}</title>
+      <link>{{ url(post, {canonical: true}) }}</link>
+      <description>{{ post.content|replace({'href="/': 'href="' ~ origin ~ '/', 'src="/': 'src="' ~ origin ~ '/'})|e }}</description>
+      <pubDate>{{ post.date|date('r') }}</pubDate>
+      <dc:creator>wallabag Team</dc:creator>
+      <guid>{{ url(post, {canonical: true}) }}</guid>
+    </item>
+    {%- endfor ~%}
+  </channel>
+</rss>

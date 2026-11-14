@@ -1,0 +1,39 @@
+{#- Default page layout, used by the news posts -#}
+{% extends 'base.html.twig' %}
+
+{% block stylesheets ~%}
+    <link rel="stylesheet" href="{{ url(asset('css/news.css')) }}">
+{%- endblock %}
+
+{% block body ~%}
+    <div class="container">
+      <main id="content" class="container-News{% block main_class %}{% endblock %}">
+        {%- block content ~%}
+        {{- page.content ~}}
+        {%- endblock ~%}
+      </main>
+      {%- if page.section == 'news' ~%}
+      {#- posts sorted by date, most recent first ~#}
+      {%- set posts = site.pages.showable|filter_by('section', 'news')|sort_by_date|map(p => p.id) ~%}
+      {%- set position = null ~%}
+      {%- for id in posts %}{% if id == page.id %}{% set position = loop.index0 %}{% endif %}{% endfor ~%}
+      {%- set newer = position is not null and position > 0 ? site.page(posts[position - 1]) : null ~%}
+      {%- set older = position is not null and position < posts|length - 1 ? site.page(posts[position + 1]) : null ~%}
+      <nav class="newsPagination" aria-label="Post navigation">
+        {%- if newer ~%}
+        <a class="newsPagination-link newsPagination-next" href="{{ url(newer) }}">
+          <span class="newsPagination-label">Newer article</span>
+          <span class="newsPagination-title">{{ newer.title }}</span>
+        </a>
+        {%- endif ~%}
+        {%- if older ~%}
+        <a class="newsPagination-link newsPagination-prev" href="{{ url(older) }}">
+          <span class="newsPagination-label">Older article</span>
+          <span class="newsPagination-title">{{ older.title }}</span>
+        </a>
+        {%- endif ~%}
+      </nav>
+      {%- endif ~%}
+    </div>
+    {{~ include('partials/download.html.twig') }}
+{%- endblock %}

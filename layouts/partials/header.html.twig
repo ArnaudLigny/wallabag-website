@@ -1,36 +1,32 @@
+{#- Header: navigation, plus the hero on the homepage (`hero: true`) -#}
+{%- set home = url(site.home) -%}
 <header>
-  <section class="hero {% if from_news %} no-bg{% endif %}">
+  <section class="hero{% if not hero %} no-bg{% endif %}">
     <div class="texture-overlay"></div>
     <div class="container">
       <div class="row nav-wrapper">
         <div class="col-md-3 col-sm-6 col-xs-6 text-left">
-          {% if from_news %}
-            <a href="/">
-              <img src="/img/logo-wallabag-black.svg" alt="wallabag logo">
-            </a>
-          {% else %}
-            <a href="/">
-              <img src="/img/logo-wallabag.svg" alt="wallabag logo">
-            </a>
-          {% endif %}
+          <a href="{{ home }}">
+            <img src="{{ url(asset(hero ? 'img/logo-wallabag.svg' : 'img/logo-wallabag-black.svg')) }}" alt="wallabag logo">
+          </a>
         </div>
         <div class="col-md-9 col-sm-6 col-xs-6 text-right navicon">
-          <nav class="site-nav{% if from_news %} site-nav-dark{% endif %}" aria-label="Primary navigation">
-            <a href="{% if from_news %}/#features{% else %}#features{% endif %}">Features</a>
-            <a href="{% if from_news %}/#migration{% else %}#migration{% endif %}">Migration</a>
-            <a href="/apps-and-readers/">Apps</a>
-            <a href="{% if from_news %}/self-hosting/{% else %}#hosting{% endif %}">Hosting</a>
-            <a href="/news/">News</a>
+          <nav class="site-nav{% if not hero %} site-nav-dark{% endif %}" aria-label="Primary navigation">
+            <a href="{{ hero ? '' : home }}#features">Features</a>
+            <a href="{{ hero ? '' : home }}#migration">Migration</a>
+            <a href="{{ url('apps-and-readers') }}">Apps</a>
+            <a href="{{ hero ? '#hosting' : url('self-hosting') }}">Hosting</a>
+            <a href="{{ url('news') }}">News</a>
             <a href="https://doc.wallabag.org/">Docs</a>
           </nav>
-          <a id="trigger-overlay" class="nav_slide_button nav-toggle{% if from_news %} nav-toggle-dark{% endif %}" href="#site-menu" aria-label="Open menu" aria-controls="site-menu" aria-expanded="false">
+          <a id="trigger-overlay" class="nav_slide_button nav-toggle{% if not hero %} nav-toggle-dark{% endif %}" href="#site-menu" aria-label="Open menu" aria-controls="site-menu" aria-expanded="false">
             <span></span>
           </a>
         </div>
       </div>
       <div class="row hero-content wp1">
         <div class="col-md-12">
-        {% if from_news == false %}
+        {% if hero %}
           <div class="hero-grid animated fadeIn">
             <div class="hero-copy">
               <p class="hero-eyebrow">Open source read-it-later</p>
@@ -54,14 +50,14 @@
               </ul>
             </div>
             <div class="hero-product" aria-label="wallabag product previews">
-              <img src="/img/screenshot.png" width="2412" height="1762" alt="wallabag interface showing saved articles and reading controls">
+              <img src="{{ url(asset('img/screenshot.png')) }}" width="2412" height="1762" alt="wallabag interface showing saved articles and reading controls">
             </div>
           </div>
-          {% else %}
+        {% else %}
           <h1 class="animated fadeIn">
-            {{ title | default: site.description }}
+            {{ page.title|default(site.description) }}
           </h1>
-          {% if date is not null %}<p class="text-center">{{ page.date | date }}</p>{% endif %}
+          {% if page.section == 'news' %}<p class="text-center">{{ page.date|date }}</p>{% endif %}
         {% endif %}
         </div>
       </div>

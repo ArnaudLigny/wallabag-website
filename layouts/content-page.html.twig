@@ -1,0 +1,12 @@
+{#- Guides (`layout: content-page`). With `dynamic: true` in the front matter, Twig is evaluated in the page body. -#}
+{% extends 'page.html.twig' %}
+
+{% block main_class %} contentPage{% endblock %}
+
+{% block content ~%}
+        {%- if page.dynamic|default(false) ~%}
+        {{- include(template_from_string(page.content, 'dynamic content for page ' ~ page.id)) ~}}
+        {%- else ~%}
+        {{- page.content ~}}
+        {%- endif ~%}
+{%- endblock %}

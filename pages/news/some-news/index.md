@@ -32,10 +32,10 @@ You can buy tickets here: [http://event.afup.org/php-tour-2016/tickets-inscripti
 
 We ordered 500 wallabag stickers. We'll send one of these to each of [our Paypal donator](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9UBA65LG3FX9Y&lc=gb). But if you'll come to PHP Tour, I'm sure I'll have some stickers to give.
 
-![wallabag stickers](stickers.jpg)
+![wallabag stickers](/news/some-news/stickers.jpg)
 
 [We also opened a shop](http://wallabag.spreadshirt.fr/en). You can order mugs, badges or a nice hoodie like this one:
 
-![wallabag hoodie](hoodie.jpg)
+![wallabag hoodie](/news/some-news/hoodie.jpg)
 
 Have a nice day, we still have great features to add into wallabag v2!

@@ -8,7 +8,7 @@ With almost 4 months delay, **our new version, wallabag 2.2, is here**. We origi
 Don’t worry, we didn’t go on holiday. We kept working hard.
 **It’s now time to present you this new great version**.
 
-![](TssHl5UHEBbCE.gif)
+![](/news/new-release-wallabag-2-2-finally/TssHl5UHEBbCE.gif)
 
 ## What’s new?
 
@@ -26,7 +26,7 @@ You can:
 * remove all entries
 * delete your account
 
-![](danger_zone.png)
+![](/news/new-release-wallabag-2-2-finally/danger_zone.png)
 
 *Features developed by tcitworld and j0k3r in [\#2177](https://github.com/wallabag/wallabag/pull/2177) and [\#2401](https://github.com/wallabag/wallabag/pull/2401)*
 
@@ -53,7 +53,7 @@ The endpoint is `api/annotations/123.json` to get annotations for the entry `123
 * We added a list view, which hides the preview picture and displays only the title. *Developed by nicosomb in [\#2662](https://github.com/wallabag/wallabag/pull/2662)*
 * On mobile view, for long articles, we added a floating button to archive, star or delete an entry. *Developed by nicosomb in [\#2670](https://github.com/wallabag/wallabag/pull/2670)*
 
-![](floating_button.gif)
+![](/news/new-release-wallabag-2-2-finally/floating_button.gif)
 
 ### Sharing
 

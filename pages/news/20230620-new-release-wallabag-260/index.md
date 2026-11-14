@@ -21,7 +21,7 @@ We now have a nice interface on card view (thank you, [@Simounet](https://github
 
 And Kevin added the mass tagging feature: what a pleasure to add many tags on several articles!
 
-![mass_tag.png](mass_tag.png)
+![mass_tag.png](/news/20230620-new-release-wallabag-260/mass_tag.png)
 
 ### Enhance the availability of the add a new URL in the web interface, by [@Simounet](https://github.com/Simounet)
 
@@ -37,9 +37,9 @@ This feature is so useful for slow connections or for instances which have few r
 
 That's why we developed it for 2.6.0. See below the result when you chose to hide thumbnails.
 
-![img_list_no_preview.png](img_list_no_preview.png)
+![img_list_no_preview.png](/news/20230620-new-release-wallabag-260/img_list_no_preview.png)
 
-![img_card_no_preview.png](img_card_no_preview.png)
+![img_card_no_preview.png](/news/20230620-new-release-wallabag-260/img_card_no_preview.png)
 
 ## Update your instance
 
